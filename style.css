@@ -1,24 +1,85 @@
-*{margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family:"poppins",sans-serif;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
 
 
 html {
-   scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
- body{background-color: black;
-color: white;}
+
+body {
+    background-color: black;
+    color: white;
+}
 
 
-                  /* nav bar */
 
 
-/* hamburger menu */
+
+/* nav bar */
+
 
 header {
     background-color: black;
 }
+
+
+
+
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+
+nav ul li a:hover {
+    opacity: 0.7;
+
+}
+
+
+
+
+
+
+/* hamburger menu */
+
+
+
 
 .menu-btn {
     display: none;
@@ -29,10 +90,15 @@ header {
     cursor: pointer;
 }
 
+
+
+
+
 @media (max-width: 768px) {
+
     .container {
-        flex-wrap: wrap;
         padding: 15px 6%;
+        flex-direction: row;
     }
 
     .menu-btn {
@@ -41,7 +107,14 @@ header {
 
     nav {
         display: none;
-        width: 100%;
+        position: absolute;
+        top: 70px;
+        right: 6%;
+        width: 160px;
+        background-color: #111;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #333;
     }
 
     nav.active {
@@ -51,7 +124,6 @@ header {
     nav ul {
         flex-direction: column;
         gap: 15px;
-        padding-top: 15px;
     }
 }
 
@@ -61,68 +133,28 @@ header {
 
 
 
-.logo {
-    font-size: 28px;
-    font-weight: 700;
-}
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: black;
-}
-.container {
+
+
+
+
+
+
+/* hero section */
+
+
+
+.hero-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-       padding: 20px 10%;
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px 6%;
-    }
-
-    nav ul {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
-
-
-nav ul {
-list-style: none;
-    display: flex;
-    gap: 30px;
-}
-nav ul li a{text-decoration: none;
-color:white;
- font-size:16px;
- transition: 0.3s;}
- 
-
-nav ul li a:hover {
-    opacity: 0.7;
-
-}
-
-                          /* hero section */
-
-
-
-.hero-container {display: flex;
-justify-content: space-between;
-align-items: center;
     padding: 80px 10%;
 
 }
+
 .hero-text h1 span {
-    color:#90EE90;
+    color: #90EE90;
 }
+
 .role {
     font-size: 22px;
 }
@@ -132,14 +164,15 @@ align-items: center;
 }
 
 .location {
-   font-size: 30px;}
+    font-size: 30px;
+}
 
 
-   .hero-image img {
+.hero-image img {
     width: 400px;
     max-width: 100%;
     height: auto;
-border-radius: 30%;
+    border-radius: 30%;
 }
 
 @media (max-width: 768px) {
@@ -204,6 +237,7 @@ border-radius: 30%;
 .services-container h2 span {
     color: #90EE90;
 }
+
 .services-cards {
     display: flex;
     flex-wrap: wrap;
@@ -218,6 +252,7 @@ border-radius: 30%;
     padding: 30px;
     transition: 0.3s;
 }
+
 .service-card:hover {
     transform: translateY(-8px);
     border-color: #90EE90;
@@ -228,6 +263,7 @@ border-radius: 30%;
     margin-bottom: 15px;
 
 }
+
 .service-card p {
     font-size: 16px;
     line-height: 1.7;
@@ -321,7 +357,7 @@ border-radius: 30%;
         font-size: 32px;
     }
 } */
- /* portfolio section */
+/* portfolio section */
 
 #portfolio {
     scroll-margin-top: 80px;
@@ -363,6 +399,7 @@ border-radius: 30%;
     color: #333;
     transition: 0.3s;
 }
+
 .project-item:hover .project-number {
     color: #90EE90;
 }
@@ -398,14 +435,14 @@ border-radius: 30%;
 
 
 /* contact section */
- /* contact section */
+/* contact section */
 
 
- /* contact section */
+/* contact section */
 
 
 
- /* contact section */
+/* contact section */
 
 #contact {
     scroll-margin-top: 80px;
@@ -488,6 +525,7 @@ border-radius: 30%;
 .contact-right textarea {
     resize: vertical;
 }
+
 .contact-right input:focus,
 .contact-right textarea:focus {
     outline: none;

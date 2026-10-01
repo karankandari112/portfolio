@@ -71,8 +71,27 @@ nav ul li a:hover {
 
 }
 
+/* theme button */
+
+#theme-btn {
+    background: none;
+    border: 1px solid #333;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+}
 
 
+.light-mode {
+    background-color: white;
+    color: black;
+}
+.light-mode .logo {
+    color: white;
+}
 
 
 

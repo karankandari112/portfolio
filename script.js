@@ -5,11 +5,10 @@ menuBtn.addEventListener("click", function () {
     navMenu.classList.toggle("active");
 });
 
-const submit=document.getElementById("click-me");
-submit.addEventListener("click", function(){
+const form = document.getElementById("contact-form");
 
-alert("Message sent successfully!")
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
 
-
-})
-
+    alert("Message sent successfully!");
+});

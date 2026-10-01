@@ -29,5 +29,5 @@ form.addEventListener("submit", function(event) {
 const themeBtn=document.getElementById("theme-btn");
 themeBtn.addEventListener("click",function(){
     document.body.classList.toggle("light-mode")
-    
+
 })
